@@ -11,24 +11,24 @@ Remittances, exchange rate, and inflation are economically interdependent in Ban
 - Collect and preprocess monthly data for all three indicators from official sources
 - Engineer lag, rolling-window, and seasonal/calendar features
 - Build and compare ML models (XGBoost, LSTM) for joint forecasting
-- Evaluate with RMSE, MAE, MAPE against classical baselines (ARIMA/VAR)
+- Evaluate with RMSE, MAE, MAPE against classical baselines
 - Interpret lead-lag relationships between the three series
 
 ## Data Sources
 
 | Dataset | Source | Format |
 |---|---|---|
-| Wage Earners' Remittance | [Bangladesh Bank](https://www.bb.org.bd/en/index.php/econdata/wageremitance) | Monthly HTML table |
+| Remittance | [Bangladesh Bank](https://www.bb.org.bd/en/index.php/econdata/wageremitance) | Monthly HTML table |
 | USD/BDT Exchange Rate | [Bangladesh Bank](https://www.bb.org.bd/en/index.php/econdata/exchangerate) | Daily, queryable by date range |
 | Consumer Price Index (Bangladesh) | [World Bank](https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=BD) | Annual CSV/Excel (supplement with BBS monthly CPI) |
 
 ## Repository Structure
 
 ```
-├── data/
+├── database/
 │   ├── remittance_bb.csv          # Monthly remittance inflows (USD million, BDT billion)
-│   ├── exchange_rate_bb.csv       # USD/BDT rate (to be added)
-│   └── cpi_bbs.csv                # Monthly CPI (to be added)
+│   ├── exchange_rate_bb.csv       # USD/BDT rate
+│   └── cpi_bbs.csv                # Monthly CPI
 ├── notebooks/
 │   └── remittance_eda.ipynb       # Exploratory data analysis
 ├── src/
@@ -46,13 +46,6 @@ cd <repo-name>
 pip install pandas numpy matplotlib scikit-learn xgboost tensorflow jupyter
 jupyter notebook notebooks/remittance_eda.ipynb
 ```
-
-## Current Status
-
-- [x] Milestone 1: Problem definition, literature review, dataset identification, initial EDA
-- [ ] Milestone 2: Full preprocessing, feature engineering, stationarity testing
-- [ ] Milestone 3: Model development (XGBoost, LSTM) and evaluation
-- [ ] Milestone 4: Final report and presentation
 
 ## License
 
