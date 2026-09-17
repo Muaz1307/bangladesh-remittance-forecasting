@@ -54,10 +54,6 @@ jupyter notebook notebooks/remittance_eda.ipynb
 - [ ] Milestone 3: Model development (XGBoost, LSTM) and evaluation
 - [ ] Milestone 4: Final report and presentation
 
-## Team
-
-- Member 1 — Muaz Abdur Rahim
-
 ## License
 
 This project is for academic purposes.
