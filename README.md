@@ -56,8 +56,7 @@ jupyter notebook notebooks/remittance_eda.ipynb
 
 ## Team
 
-- Member 1 — [name]
-- Member 2 — [name]
+- Member 1 — Muaz Abdur Rahim
 
 ## License
 
