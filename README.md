@@ -26,15 +26,14 @@ Remittances, exchange rate, and inflation are economically interdependent in Ban
 
 ```
 ├── database/
-│   ├── remittance_bb.csv          # Monthly remittance inflows (USD million, BDT billion)
-│   ├── exchange_rate_bb.csv       # USD/BDT rate
-│   └── cpi_bbs.csv                # Monthly CPI
-├── notebooks/
-│   └── remittance_eda.ipynb       # Exploratory data analysis
-├── src/
-│   └── load_data.py               # Data loading & merging script
-├── reports/
-│   └── Milestone1_Project_Report.docx
+│   ├── bangladesh_macro_indicators_2010_2026.csv
+│   ├── bangladesh_monthly_inflation_2010_2026.csv
+│   ├── bangladesh_monthly_remittance_2010_2026.csv
+│   └── USD_to_BDT_Monthly_Exchange_Rates_2010_2026.csv
+├── project/
+│   └── Multivariate_Joint_Forecasting.ipynb               
+├── report/
+│   └── cse427.pdf
 └── README.md
 ```
 
